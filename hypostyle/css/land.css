@@ -1,0 +1,140 @@
+@import url('http://fonts.cdnfonts.com/css/menlo');
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin")
+
+
+body {
+
+}
+
+main { position: absolute;
+top: 50%;
+left: 20px;
+right: 20px;
+padding: 20px;
+transform: translateY(-50%);
+resize: vertical;
+overflow: auto;
+}
+
+header {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 4.2360679775vw;
+    font-style: light;
+    align-self: center;
+    flex-wrap: wrap;
+    text-shadow: transparent;
+    height: 100%;
+    vertical-align: middle;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1 {
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1:hover {
+  text-shadow: 0 1px 0 indianred, 0 2px 0 red,
+               0 2px 0 coral, 0 4px 0 coral,
+               0 3px 0 pink, 0 6px 0 pink,
+               0 4px 6px coral;
+  text-decoration: wavy;
+  color: transparent;
+  filter: invert(0%)
+}
+
+h1:hover span {
+display:  none
+}
+
+h1:hover:before {
+content:  "hypostle"
+animation-name: loadname 3s linear infinite alternate ;
+}
+
+@keyframes loadname {
+  0% {
+    content: "********";
+  }
+  24% {
+    content: "h*******";
+  }
+  36% {
+    content: "hy******";
+  }
+  48% {
+    content: "hyp*****";
+  }
+  60% {
+    content: "hypo****";
+  }
+  72% {
+    content: "hypost**";
+  }
+  84% {
+    content: "hypostl*";
+  }
+  100% {
+    content: "hypostle";
+  }
+}
+
+p {
+    padding: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.2360679775vw;
+    font-family: 'Menlo', sans-serif
+}
+
+.colorflow
+{
+  background-image: url(gifs/1.gif);
+  filter: invert(75%);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes bbg {
+  0% {
+    background: wheat;
+  }
+  50% {
+    background: #f6faff;
+  }
+  100% {
+    background: #e5d8d5;
+  }
+}
+
+body {
+    animation-name: bbg;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.blurry
+{
+  animation-name: blurry;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+@keyframes blurry {
+  0% {
+    filter: blur(3px);
+  }
+  50% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
