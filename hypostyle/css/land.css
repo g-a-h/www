@@ -1,11 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/menlo');
 @import url("http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin")
-
-
-body {
-
-}
-
+   
 main { position: absolute;
 top: 50%;
 left: 20px;
